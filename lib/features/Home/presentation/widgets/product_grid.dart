@@ -27,12 +27,12 @@ class ProductGrid extends StatelessWidget {
         ProductCard(
           title: "qrenol  Jacket Nike runner",
           price: "\$79",
-          image: "assets/images/tshirt.png",
+          image: "assets/images/image1.png",
         ),
         ProductCard(
           title: "Trail Running Jacket Nike Windrunner",
           price: "\$59",
-          image: "assets/images/tshirt.png",
+          image: "assets/images/image2.png"
         ),
       ],
     );
