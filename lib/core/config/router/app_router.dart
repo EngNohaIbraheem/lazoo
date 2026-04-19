@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../../../features/Auth/forgett_password/presentation/screens/forgett_pasword.dart';
+import '../../../features/Auth/login/presentation/screens/login_screen.dart';
 import '../../../features/Auth/reset_password/screens/Reset_password.dart';
 import '../../../features/Auth/signup/presentation/screens/signup_screen.dart';
 import '../../../features/Home/presentation/screens/home_screen.dart';
+import '../../../features/cart/features/screens/cart_screen.dart';
 import '../../../features/onboarding/presentation/screens/getstarted_screen.dart';
 import '../../../features/onboarding/presentation/screens/onboarding_screen.dart';
+import '../../../features/profile/features/screens/drawer_profile.dart';
 
 
 abstract class AppRouter {
@@ -23,16 +26,16 @@ abstract class AppRouter {
         return MaterialPageRoute(builder: (_) => const HomeScreen());
        case ResetPasswordScreen.routeName:
         return MaterialPageRoute(builder: (_) => const ResetPasswordScreen());
-      // case ForgotPasswordScreen.routeName:
-      //   return MaterialPageRoute(builder: (_) => const ForgotPasswordScreen());
-      // case VerificationCodeScreen.routeName:
-      //   return MaterialPageRoute(
-      //       builder: (_) => const VerificationCodeScreen());
-      //case SearchScreen.routeName:
-        //return MaterialPageRoute(builder: (_) => const SearchScreen());
-    //   case CreateNewPasswordScreen.routeName:
-    //     return MaterialPageRoute(
-    //         builder: (_) => const CreateNewPasswordScreen());
+       case ForgotPasswordScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const ForgotPasswordScreen());
+      case CartScreen.routeName:
+       return MaterialPageRoute(
+            builder: (_) => const CartScreen());
+       case ProfileDrawer.routeName:
+        return MaterialPageRoute(builder: (_) => const ProfileDrawer());
+      case LoginScreen.routeName:
+       return MaterialPageRoute(
+         builder: (_) => const LoginScreen());
     // case ProductDetailsScreen.routeName:
     //  return MaterialPageRoute(builder: (_) => ProductDetailsScreen());
     //   case NotificationScreen.routeName:

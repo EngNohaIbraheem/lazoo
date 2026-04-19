@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  const Header({super.key, required Null Function() onPressed});
 
   @override
   Widget build(BuildContext context) {

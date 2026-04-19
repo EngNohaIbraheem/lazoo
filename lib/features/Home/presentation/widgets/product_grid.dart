@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:lazoo/features/Home/presentation/widgets/product_card.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:lazoo/features/Home/presentation/widgets/product_card.dart';
 
 class ProductGrid extends StatelessWidget {
   const ProductGrid();
@@ -30,9 +32,9 @@ class ProductGrid extends StatelessWidget {
           image: "assets/images/image1.png",
         ),
         ProductCard(
-          title: "Trail Running Jacket Nike Windrunner",
-          price: "\$59",
-          image: "assets/images/image2.png"
+            title: "Trail Running Jacket Nike Windrunner",
+            price: "\$59",
+            image: "assets/images/image2.png"
         ),
       ],
     );
