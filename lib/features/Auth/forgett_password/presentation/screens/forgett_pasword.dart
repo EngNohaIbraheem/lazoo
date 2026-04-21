@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/config/constant/custom_button.dart';
 import '../../../../../core/config/constant/custum_text_field.dart';
+import '../../../reset_password/screens/Reset_password.dart';
 
 
 
@@ -63,7 +64,10 @@ class ForgotPasswordScreen extends StatelessWidget {
 
               CustomButton(
                 text: "Confirm Mail",
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context,ResetPasswordScreen.routeName);
+
+                },
               ),
             ],
           ),

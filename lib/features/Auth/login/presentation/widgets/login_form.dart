@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/config/constant/app_color.dart';
 import '../../../../../core/config/constant/custum_text_field.dart';
 import '../../../../../core/config/constant/remember_me_switch.dart';
+import '../../../forgett_password/presentation/screens/forgett_pasword.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -20,19 +21,19 @@ class _LoginFormState extends State<LoginForm> {
   Widget build(BuildContext context) {
     return Form(
       key: _formKey,
-      child: const Column(
+      child: Column(
         children: [
           /// Username
-          CustomTextField(
+          const CustomTextField(
             label: "Username",
             hint: "Enter username",
             suffix: Icon(Icons.check, color: AppColors.green),
           ),
 
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           /// Password
-          CustomTextField(
+          const CustomTextField(
             label: "Password",
             hint: "Enter password",
             isPassword: true,
@@ -42,20 +43,32 @@ class _LoginFormState extends State<LoginForm> {
             ),
           ),
 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           /// Forgot Password
           Align(
             alignment: Alignment.centerRight,
-            child: Text(
-              "Forgot password?",
-              style: TextStyle(color: AppColors.red),
-            ),
-          ),
+            child:
+            GestureDetector(
+              onTap: () {
 
-          SizedBox(height: 20),
+                      Navigator.pushNamed(context,ForgotPasswordScreen.routeName);
 
-          RememberMeSwitch(),
+
+              },
+              child: Text(
+                "forget password",
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 16,
+                  decoration: TextDecoration.underline, // optional عشان يبان clickable
+                ),
+              ),
+            )          ),
+
+          const SizedBox(height: 20),
+
+          const RememberMeSwitch(),
         ],
       ),
     );

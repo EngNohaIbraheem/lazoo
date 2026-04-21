@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/config/constant/custom_button.dart';
+import '../../../../Home/presentation/screens/home_screen.dart';
+import '../../../login/presentation/screens/login_screen.dart';
 import '../widgets/signup_form.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -26,7 +28,10 @@ class SignupScreen extends StatelessWidget {
             const Spacer(),
             CustomButton(
               text: "Sign Up",
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context,HomeScreen.routeName);
+
+              },
 
             ),
           ],

@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../Auth/login/presentation/screens/login_screen.dart';
 import '../widgets/social_Button.dart';
+import 'package:flutter/material.dart';
+
+import '../../../Auth/login/presentation/screens/login_screen.dart';
+import '../widgets/social_Button.dart';
 
 class GetStartedScreen extends StatelessWidget {
   const GetStartedScreen({super.key});
@@ -110,7 +114,7 @@ class GetStartedScreen extends StatelessWidget {
               ),
             ),
             onPressed: () {
-              Navigator.pushNamed(context,LoginScreen.routeame);
+              Navigator.pushNamed(context,LoginScreen.routeName);
 
             },
             child: Container(

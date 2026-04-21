@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/config/constant/app_color.dart';
 import '../../../../../core/config/constant/custom_button.dart';
+import '../../../../Home/presentation/screens/home_screen.dart';
 import '../widgets/login_form.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -49,7 +50,10 @@ class LoginScreen extends StatelessWidget {
 
             CustomButton(
               text: "Login",
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context,HomeScreen.routeName);
+
+              },
             ),
           ],
         ),

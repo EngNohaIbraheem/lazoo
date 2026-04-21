@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/config/constant/custom_button.dart';
 import '../../../../core/config/constant/custum_text_field.dart';
+import '../../login/presentation/screens/login_screen.dart';
 
 
 class ResetPasswordScreen extends StatelessWidget {
@@ -50,7 +51,10 @@ class ResetPasswordScreen extends StatelessWidget {
 
             CustomButton(
               text: "Reset Password",
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context,LoginScreen.routeName);
+
+              },
             ),
           ],
         ),
