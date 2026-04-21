@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../Auth/login/presentation/screens/login_screen.dart';
 import '../widgets/social_Button.dart';
 
 class GetStartedScreen extends StatelessWidget {
@@ -108,10 +109,19 @@ class GetStartedScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(14),
               ),
             ),
-            onPressed: () {},
-            child: const Text(
-              "Create an Account",
-              style: TextStyle(fontSize: 16),
+            onPressed: () {
+              Navigator.pushNamed(context,LoginScreen.routeame);
+
+            },
+            child: Container(
+              child: const Text(
+                "Get started",
+                style: TextStyle(
+                    color: Colors.white,
+
+                    fontSize: 16
+                ),
+              ),
             ),
           ),
         ),
