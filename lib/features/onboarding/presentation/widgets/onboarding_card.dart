@@ -67,9 +67,11 @@ class _OnboardingCardState extends State<OnboardingCard> {
 
           const SizedBox(height: 15),
 
-          Text(
-            AppStrings.skip,
-            style: TextStyle(color: AppColors.green),
+          Container(
+            child: Text(
+              AppStrings.skip,
+              style: TextStyle(color: AppColors.green),
+            ),
           ),
         ],
       ),
