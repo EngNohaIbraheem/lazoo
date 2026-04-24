@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/config/constant/app_color.dart';
 import '../../../../core/config/constant/custom_button.dart';
 import '../../../../core/config/constant/app_strings.dart';
+import '../../../Home/presentation/screens/home_screen.dart';
+import '../screens/getstarted_screen.dart';
 
 
 class OnboardingCard extends StatefulWidget {
@@ -66,13 +68,22 @@ class _OnboardingCardState extends State<OnboardingCard> {
           ),
 
           const SizedBox(height: 15),
-
-          Container(
-            child: Text(
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, GetStartedScreen.routeName);
+            },
+            child: const Text(
               AppStrings.skip,
-              style: TextStyle(color: AppColors.green),
+              style: TextStyle(
+                color: AppColors.green,
+                decoration: TextDecoration.underline, // optional عشان تبان clickable
+              ),
             ),
-          ),
+          )
+          // const Text(
+          //   AppStrings.skip,
+          //   style: TextStyle(color: AppColors.green),
+          // ),
         ],
       ),
     );

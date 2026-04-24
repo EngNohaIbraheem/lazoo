@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../features/Auth/Login/presentation/screens/login_screen.dart';
+import '../../../features/Auth/Register/presentation/screens/signup_screen.dart';
 import '../../../features/Auth/forgett_password/presentation/screens/forgett_pasword.dart';
-import '../../../features/Auth/login/presentation/screens/login_screen.dart';
 import '../../../features/Auth/reset_password/screens/Reset_password.dart';
-import '../../../features/Auth/signup/presentation/screens/signup_screen.dart';
 import '../../../features/Home/presentation/screens/home_screen.dart';
 import '../../../features/cart/features/screens/cart_screen.dart';
 import '../../../features/onboarding/presentation/screens/getstarted_screen.dart';
@@ -20,8 +20,8 @@ abstract class AppRouter {
     return MaterialPageRoute(builder: (_) => const GetStartedScreen());
        case OnboardingScreen.routeName:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
-      case SignupScreen.routeName:
-       return MaterialPageRoute(builder: (_) => const SignupScreen());
+      case SignUpScreen.routeName:
+       return MaterialPageRoute(builder: (_) => const SignUpScreen());
       case HomeScreen.routeName:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
        case ResetPasswordScreen.routeName:
@@ -34,7 +34,7 @@ abstract class AppRouter {
        case ProfileDrawer.routeName:
         return MaterialPageRoute(builder: (_) => const ProfileDrawer());
       case LoginScreen.routeName:
-       return MaterialPageRoute(
+      return MaterialPageRoute(
          builder: (_) => const LoginScreen());
     // case ProductDetailsScreen.routeName:
     //  return MaterialPageRoute(builder: (_) => ProductDetailsScreen());

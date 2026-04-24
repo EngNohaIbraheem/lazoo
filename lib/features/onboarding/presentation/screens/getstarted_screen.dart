@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/config/constant/app_color.dart';
+import '../../../Auth/Login/presentation/screens/login_screen.dart';
+import '../../../Auth/Register/presentation/screens/signup_screen.dart';
 import '../widgets/social_Button.dart';
 
 class GetStartedScreen extends StatelessWidget {
@@ -79,10 +82,16 @@ class GetStartedScreen extends StatelessWidget {
                     style: TextStyle(color: Colors.grey.shade600),
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, LoginScreen.routeName);
+
+
+                    },
                     child: const Text(
-                      "Signin",
+                      "SignIN",
                       style: TextStyle(
+                        // color: AppColors.white,
+
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -108,10 +117,17 @@ class GetStartedScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(14),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, SignUpScreen.routeName);
+
+            },
             child: const Text(
               "Create an Account",
-              style: TextStyle(fontSize: 16),
+
+              style: TextStyle(fontSize: 16,
+                color: AppColors.white,
+
+              ),
             ),
           ),
         ),

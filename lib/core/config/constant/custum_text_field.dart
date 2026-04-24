@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'app_color.dart';
 
-class CustomTextField extends StatelessWidget {
+class CustomTextFieldspecial extends StatelessWidget {
   final String label;
   final String hint;
   final Widget? suffix;
   final bool isPassword;
 
-  const CustomTextField({
+  const CustomTextFieldspecial({
     super.key,
     required this.label,
     required this.hint,

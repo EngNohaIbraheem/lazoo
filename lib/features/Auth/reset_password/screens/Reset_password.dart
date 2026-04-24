@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/config/constant/custom_button.dart';
 import '../../../../core/config/constant/custum_text_field.dart';
+import '../../Register/presentation/widgets/custum_text_field.dart';
 
 
 class ResetPasswordScreen extends StatelessWidget {
@@ -28,7 +29,7 @@ class ResetPasswordScreen extends StatelessWidget {
 
             const SizedBox(height: 40),
 
-            const CustomTextField(
+            const CustomTextFieldspecial(
               label: "Password",
               hint: "********",
               isPassword: true,
@@ -36,7 +37,7 @@ class ResetPasswordScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            const CustomTextField(
+            const CustomTextFieldspecial(
               label: "Confirm Password",
               hint: "********",
               isPassword: true,
