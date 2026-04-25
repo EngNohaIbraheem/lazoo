@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/config/constant/app_color.dart';
 import '../../../Auth/Login/presentation/screens/login_screen.dart';
-import '../../../Auth/Register/presentation/screens/signup_screen.dart';
+// import '../../../Auth/Register/presentation/screens/signup_screen.dart';
 import '../widgets/social_Button.dart';
 
 class GetStartedScreen extends StatelessWidget {
@@ -118,7 +118,7 @@ class GetStartedScreen extends StatelessWidget {
               ),
             ),
             onPressed: () {
-              Navigator.pushNamed(context, SignUpScreen.routeName);
+              // Navigator.pushNamed(context, SignUpScreen.routeName);
 
             },
             child: const Text(

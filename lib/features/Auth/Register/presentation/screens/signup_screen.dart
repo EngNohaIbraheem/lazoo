@@ -42,7 +42,8 @@ class SignUpScreen extends StatelessWidget {
             const Expanded(
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: SignUpForm(),
+                child:
+                SignUpForm(),
               ),
             ),
 
